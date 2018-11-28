@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<style>
+		.div1 {
+			background: aliceblue no-repeat;
+			width: 1000px;
+			height: 1000px;
+			margin: 0 auto;
+		}
+		
+		.div2 {
+			width: 800px;
+			height: 600px;
+			margin-top: -300px;
+			margin-left: -400px;
+			left: 50%;
+			top: 50%;
+			position: absolute;
+			background: url(img/48.jpg) no-repeat;
+			background-size: 100%;
+		}
+		
+		.w1 {
+			font-size: large;
+			font: "黑体";
+		}
+	
+		.center{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -140px;
+			margin-top: -260px;
+			width: 260px;
+			height: 485px;
+		}
+		.inpcss{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			font-size: 20px;
+			height: 25px;
+			border: 1px solid orangered;
+			border-radius: 8px;
+			color: black;
+			outline: none;
+			display: block;
+			padding-left: 5px;
+		}
+		.inpbcss{
+			width: 100px;
+			height: 60px;
+			background-size: 25px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: cadetblue;
+			border: black solid 2px;
+			border-radius: 8px;
+			font-size: 30px;
+			cursor: pointer;
+		}
+		.inpbcss:hover{
+			background: white;
+		}
+	</style>
+
+	<body>
+		<div class="div1">
+			<div class="div2">
+				<a class="center">
+					<p class="w1">账号：</p><input class="inpcss" name="username" type="text" placeholder="请输入名字" />
+					<p class="w1">密码：</p><input  class="inpcss" type="password" maxlength="18" placeholder="请输入密码"/>
+					<p class="w1">确认密码</p><input  class="inpcss" type="password"  placeholder="请再次输入密码" />
+					<p class="w1">验证码：</p><input  class="inpcss" type="range" />
+					<p class="w1">手机号：</p><input  class="inpcss" type="tel"  placeholder="请输入手机号码"/>
+					<p class="c1"><input  class="inpbcss" type="reset" />&emsp;<input class="inpbcss" name="sub" type="submit" /></p>
+				</a>
+			</div>
+		</div>
+	</body>
+
+</html>
